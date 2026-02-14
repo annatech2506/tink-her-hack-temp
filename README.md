@@ -2,46 +2,45 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# Focus Flow-Focus Enhancing system 🎯
 
 ## Basic Details
+Purpose: Personal focus tracking and productivity improvement
+Tech Stack: HTML, CSS, JavaScript (frontend only)
+Key Features: Timer-based focus sessions, reflection prompts, rating system, session analytics
 
-### Team Name: [Name]
+### Team Name: Anna Mijo's Team
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: Anna Mijo -Jyothi Engineering College
 
 ### Hosted Project Link
-[mention your project hosted link here]
+fffocusflow1.netlify.app
 
 ### Project Description
-[2-3 lines about what your project does]
+The AI Focus System is a simple yet powerful web app designed to help users stay focused and improve productivity. Users can choose a focus duration, start a timer, and immerse themselves in distraction-free work. After each session, they can reflect on their focus, rate their performance ⭐, and record what distracted them 📝.
+
+The app keeps track of completed sessions and total focus minutes 📊, giving users insights into their productivity patterns. While it’s currently a lightweight tool, it has the potential to evolve into an AI-powered personal focus assistant, offering adaptive suggestions and streak tracking 🔮.
+
+This project is perfect for anyone looking to build healthy focus habits in a structured and fun way! 🎯💡
 
 ### The Problem statement
-[What problem are you solving?]
+Many students and professionals struggle to maintain focus during work or study sessions. Distractions from phones, social media, and environment make it difficult to track productivity or understand where attention is lost. Existing solutions are either too complex, expensive, or fail to provide personalized feedback on focus habits.
 
 ### The Solution
-[How are you solving it?]
-
----
+Focus System offers a simple, interactive way to improve focus:
+Users select a session duration and start a distraction-free timer ⏲️
+After the session, they can rate their focus ⭐ and reflect on distractions 📝
+The app tracks completed sessions, total focus minutes, and streaks 📊
+Based on feedback, users gain insights into their focus patterns, helping them gradually improve productivity
 
 ## Technical Details
 
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
-
-**For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
-
----
+- Languages used: HTML,CSS,Java Script
+- Tools used: VS code,Edge
 
 ## Features
 
