@@ -44,37 +44,20 @@ Based on feedback, users gain insights into their focus patterns, helping them g
 
 ## Features
 
-List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
-
----
+Custom Focus Timer ⏱️: Users can select different durations (1, 5, 10, 25 minutes) for a distraction-free focus session.
+Circular Progress Visualization 🔵: Shows the timer’s progress in a sleek circular animation, making it easy to track session time.
+Reflection & Rating System 📝⭐: After each session, users can rate their focus and note what distracted them for self-improvement.
+Analytics Dashboard 📊: Tracks completed sessions, total focus minutes, and provides basic insights into productivity patterns.
 
 ## Implementation
 
 ### For Software:
 
 #### Installation
-```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
-```
+No special installation required. Just download or clone the project files to your local machine.
 
 #### Run
-```bash
-[Run commands - e.g., npm start, python app.py]
-```
-
-### For Hardware:
-
-#### Components Required
-[List all components needed with specifications]
-
-#### Circuit Setup
-[Explain how to set up the circuit]
-
----
+Open the index.html file in any modern web browser (Chrome, Edge, Firefox).
 
 ## Project Documentation
 
@@ -82,53 +65,177 @@ List the key features of your project:
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+<img width="1280" height="562" alt="image" src="https://github.com/user-attachments/assets/d8ae0ed4-1a2d-480e-ab57-f17a216b0acb" />
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+
+<img width="1280" height="562" alt="image" src="https://github.com/user-attachments/assets/6d054171-e407-4cc2-8afd-2b127cb064f8" />
+
+
+<img width="1280" height="562" alt="image" src="https://github.com/user-attachments/assets/ef13df44-c0c5-4957-be0b-691176649590" />
 
 #### Diagrams
 
 **System Architecture:**
 
-![Architecture Diagram](docs/architecture.png)
-*Explain your system architecture - components, data flow, tech stack interaction*
+          ┌──────────────────┐
+          │  User Interface  │
+          │  (HTML + CSS)    │
+          └────────┬─────────┘
+                   │
+        ┌──────────┴──────────┐
+        │      Application    │
+        │    Logic (JS)       │
+        │ - Timer             │
+        │ - Session control   │
+        │ - Reflection & Rating│
+        │ - Analytics         │
+        └──────────┬─────────┘
+                   │
+        ┌──────────┴──────────┐
+        │  Storage / Data     │
+        │ - LocalStorage      │
+        │ - Session tracking  │
+        │ - Total minutes     │
+        │ - Reflections & Ratings│
+        └─────────────────────┘
 
 **Application Workflow:**
 
-![Workflow](docs/workflow.png)
-*Add caption explaining your workflow*
+[Start: Home Screen]
+         │
+         ▼
+[Select Focus Duration]
+         │
+         ▼
+[Click Start]
+         │
+         ▼
+[Timer Runs] ──────────────► [Update Circular Progress]
+         │
+         ▼
+[End Session / Timer Complete]
+         │
+         ▼
+[Reflection & Rating]
+         │
+         ▼
+[Store Data in LocalStorage]
+         │
+         ▼
+[Update Analytics Dashboard]
+         │
+         ▼
+[Back to Home Screen / Next Session]
+User chooses a focus session duration on the home screen.
 
----
+Timer starts; circular progress shows session countdown.
 
-### For Hardware:
+User can stop early or let it complete.
 
-#### Schematic & Circuit
+After the session, user rates their focus and records distractions.
 
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
+All session data is stored locally and analytics are updated.
 
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
+User can start the next session, and the cycle continues.
 
 #### Build Photos
 
-![Team](Add photo of your team here)
+<img width="1280" height="960" alt="image" src="https://github.com/user-attachments/assets/4e77d330-7eab-4b38-9e23-9ad63be0ab60" />
 
-![Components](Add photo of your components here)
-*List out all components shown*
+
+Home Screen 🏠
+
+Duration selector dropdown
+
+Start Focus Session button
+
+Timer Screen ⏱️
+
+Circular SVG timer
+
+Time display (minutes:seconds)
+
+Stop Session button
+
+Reflection Screen 📝
+
+Star rating system (1–5 stars)
+
+Textarea for recording distractions
+
+Submit Reflection button
+
+Analytics Dashboard 📊
+
+Display of completed sessions
+
+Display of total focus minutes
+
+(Future enhancement) Streaks and insights
+
+Application Logic ⚙️
+
+Timer countdown using JavaScript
+
+Progress circle animation
+
+Session data storage in localStorage
+
+Rating and reflection handling
+
+Styles & UI Effects 🎨
+
+Gradient animated background
+
+Glassmorphism container
+
+Hover effects on buttons
+
+Fade-in animations
 
 ![Build](Add photos of build process here)
 *Explain the build steps*
 
-![Final](Add photo of final product here)
-*Explain the final build*
+<img width="1280" height="562" alt="image" src="https://github.com/user-attachments/assets/89ec8239-c735-4a7d-842c-65a7723cf821" />
+How It Works
 
----
+Home Screen 🏠
+
+Users select the duration of their focus session (1, 5, 10, or 25 minutes) using a dropdown.
+
+Clicking Start Focus Session transitions to the timer screen.
+
+Focus Timer ⏱️
+
+A circular SVG timer shows real-time countdown.
+
+The timer dynamically updates the progress circle and the numeric display.
+
+Users can stop the session early, which transitions them to the reflection screen.
+
+Reflection & Rating 📝⭐
+
+After completing or stopping a session, users can rate their focus using a 1–5 star system.
+
+Users can also record distractions in a textarea.
+
+This feedback is stored in the browser’s localStorage for persistence.
+
+Analytics Dashboard 📊
+
+Tracks completed sessions and total focus minutes.
+
+Can be expanded to show streaks, trends, and focus insights.
+
+User Interface & Design 🎨
+
+Modern gradient animated background with smooth transitions.
+
+Glassmorphism-style container with blur effect for focus.
+
+Hover effects and fade-in animations make the app visually engaging.
+
 
 ## Additional Documentation
 
@@ -360,7 +467,7 @@ python script.py -v --format json data.json
 ## Project Demo
 
 ### Video
-[Add your demo video link here - YouTube, Google Drive, etc.]
+https://drive.google.com/file/d/1JCtp4Uj0r6AZAEynHQIH9_lkQt33rOqu/view?usp=sharing
 
 *Explain what the video demonstrates - key features, user flow, technical highlights*
 
@@ -373,19 +480,15 @@ python script.py -v --format json data.json
 
 If you used AI tools during development, document them here for transparency:
 
-**Tool Used:** [e.g., GitHub Copilot, v0.dev, Cursor, ChatGPT, Claude]
+**Tool Used:** chat gpt
 
 **Purpose:** [What you used it for]
-- Example: "Generated boilerplate React components"
-- Example: "Debugging assistance for async functions"
-- Example: "Code review and optimization suggestions"
+ "Code review and optimization suggestions"
 
 **Key Prompts Used:**
-- "Create a REST API endpoint for user authentication"
-- "Debug this async function that's causing race conditions"
 - "Optimize this database query for better performance"
 
-**Percentage of AI-generated code:** [Approximately X%]
+**Percentage of AI-generated code:** [Approximately 40%]
 
 **Human Contributions:**
 - Architecture design and planning
